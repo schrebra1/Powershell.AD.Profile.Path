@@ -1,0 +1,1 @@
+﻿get-aduser -Filter "*" -Server (Get-ADDomainController) -SearchBase "OU=Example,OU=Example,DC=Example,DC=Example,DC=Example,DC=Example" -Properties 'Samaccountname' | select 'Samaccountname' | out-file -FilePath C:\temp\all.users.txt
